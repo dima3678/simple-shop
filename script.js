@@ -4,6 +4,7 @@ let btnBread = document.getElementById('btn-bread');
 let btnCheese = document.getElementById('btn-cheese');
 let btnChoco = document.getElementById('btn-choco');
 let btnMilk = document.getElementById('btn-milk');
+let donate = document.getElementById('cart-donate');
 
 let ul = document.getElementById('cart-list');
 let totalPrice = document.getElementById('total-price');
@@ -66,7 +67,10 @@ btnChoco.addEventListener('click', function () {
 btnMilk.addEventListener('click', function () {
     addToCart('Молоко 🥛', 30);
 });
-
+donate.addEventListener('click', function () {
+    alert("Дякую за покупку! Скинь на булочку сюди: 4441 1144 0547 3727");
+    return;
+});
 
 // --- ЧАСТИНА 4: ОЧИЩЕННЯ ---
 
